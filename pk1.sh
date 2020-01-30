@@ -1,10 +1,9 @@
 #!/bin/bash
-a=$1
-b=$2
-if ( $# -ne 2 )
-echo "send only 2 numbers"
-fi 
-if (a -ne b)
+echo "enter the value of a"
+read a
+echo "enter the value of b"
+read b
+if ( $1 -gt $2 ) then
 echo "$a is greatest"
 else
 echo "$b is greatest"
